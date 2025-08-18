@@ -1,0 +1,23 @@
+"""
+Continuous integration gate definitions for JANUS.
+
+This YAML file defines threshold values for various metrics that must be
+satisfied before merging changes.  In a real project, these gates would
+be enforced by a CI pipeline (see `ci/workflow.yml`).  The current
+values are placeholders and should be tuned based on your requirements.
+"""
+
+# Minimum TruthLens support score required for parametric answers.
+min_truth_support: 0.4
+
+# Maximum stale hallucination rate allowed.
+max_stale_hallucination: 0.1
+
+# Minimum freshness SLA hit rate.
+min_freshness_sla: 0.8
+
+# Maximum median latency (seconds).
+max_latency_p50: 2.0
+
+# Maximum cost per supported claim.
+max_cost_per_supported: 100.0
